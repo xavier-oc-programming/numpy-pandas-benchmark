@@ -1,0 +1,134 @@
+{
+  "100000": {
+    "sort": {
+      "numpy": 0.006570016800105804,
+      "pandas": 0.01009905820028507,
+      "speedup": 1.537,
+      "winner": "NumPy"
+    },
+    "filter": {
+      "numpy": 0.0013096249997033738,
+      "pandas": 0.0009077502014406491,
+      "speedup": 0.693,
+      "winner": "Pandas"
+    },
+    "sum": {
+      "numpy": 5.945799930486828e-05,
+      "pandas": 4.90083999466151e-05,
+      "speedup": 0.824,
+      "winner": "Pandas"
+    },
+    "mean": {
+      "numpy": 5.459199965116568e-05,
+      "pandas": 8.796620095381513e-05,
+      "speedup": 1.611,
+      "winner": "NumPy"
+    },
+    "std": {
+      "numpy": 0.00019387500142329373,
+      "pandas": 0.00029284980046213606,
+      "speedup": 1.511,
+      "winner": "NumPy"
+    },
+    "fillna": {
+      "numpy": 0.00012024179959553294,
+      "pandas": 4.1441799839958546e-05,
+      "speedup": 0.345,
+      "winner": "Pandas"
+    },
+    "groupby": {
+      "numpy": 0.0014303665993793402,
+      "pandas": 0.002319658400665503,
+      "speedup": 1.622,
+      "winner": "NumPy"
+    }
+  },
+  "1000000": {
+    "sort": {
+      "numpy": 0.08065355839935365,
+      "pandas": 0.12030850859955536,
+      "speedup": 1.492,
+      "winner": "NumPy"
+    },
+    "filter": {
+      "numpy": 0.01380688339995686,
+      "pandas": 0.009419050199358025,
+      "speedup": 0.682,
+      "winner": "Pandas"
+    },
+    "sum": {
+      "numpy": 0.0006202167998708319,
+      "pandas": 0.0003636333989561535,
+      "speedup": 0.586,
+      "winner": "Pandas"
+    },
+    "mean": {
+      "numpy": 0.0006659333994321059,
+      "pandas": 0.0008143668004777282,
+      "speedup": 1.223,
+      "winner": "NumPy"
+    },
+    "std": {
+      "numpy": 0.0025841163987934124,
+      "pandas": 0.0028675079993263353,
+      "speedup": 1.11,
+      "winner": "NumPy"
+    },
+    "fillna": {
+      "numpy": 0.0016942413996730466,
+      "pandas": 0.0003530751993821468,
+      "speedup": 0.208,
+      "winner": "Pandas"
+    },
+    "groupby": {
+      "numpy": 0.015277866600081324,
+      "pandas": 0.010587075200601249,
+      "speedup": 0.693,
+      "winner": "Pandas"
+    }
+  },
+  "10000000": {
+    "sort": {
+      "numpy": 0.9096410583995749,
+      "pandas": 1.7679734169993027,
+      "speedup": 1.944,
+      "winner": "NumPy"
+    },
+    "filter": {
+      "numpy": 0.13470389999929466,
+      "pandas": 0.08967227499961154,
+      "speedup": 0.666,
+      "winner": "Pandas"
+    },
+    "sum": {
+      "numpy": 0.005586250200576614,
+      "pandas": 0.004664516799675766,
+      "speedup": 0.835,
+      "winner": "Pandas"
+    },
+    "mean": {
+      "numpy": 0.005587016399658751,
+      "pandas": 0.008952167000825285,
+      "speedup": 1.602,
+      "winner": "NumPy"
+    },
+    "std": {
+      "numpy": 0.022204366799996933,
+      "pandas": 0.02851975839876104,
+      "speedup": 1.284,
+      "winner": "NumPy"
+    },
+    "fillna": {
+      "numpy": 0.01669231700070668,
+      "pandas": 0.005029458599165082,
+      "speedup": 0.301,
+      "winner": "Pandas"
+    },
+    "groupby": {
+      "numpy": 0.18597705840002163,
+      "pandas": 0.12929464179978822,
+      "speedup": 0.695,
+      "winner": "Pandas"
+    }
+  }
+}
