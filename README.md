@@ -164,7 +164,7 @@ All times are mean of 5 runs using `time.perf_counter()`.
 ### Memory usage
 
 ![Memory comparison](plots/06_memory_comparison.png)
-*NumPy's 17-byte-per-row structured layout vs Pandas' per-column storage. At 10M rows: NumPy ~162 MB, Pandas ~238 MB.*
+*NumPy structured array vs Pandas DataFrame memory at each scale. For purely numeric dtypes (int8, int32, float32, float64), both use ~162 MB at 10M rows — Pandas columns are numpy arrays internally, so raw data footprint is identical.*
 
 ---
 
@@ -189,7 +189,7 @@ Based on the numbers from this benchmark — not generic advice.
 **Use NumPy when:**
 - You need to **sort** large numeric data — 1.5–1.9× faster at every scale, gap widens with size.
 - You are computing **reductions** (mean, std) on homogeneous numeric arrays at 10M+ rows — avoids Pandas' NA-handling overhead.
-- **Memory is constrained** — NumPy's structured array is ~32% smaller than the equivalent DataFrame at 10M rows (162 MB vs 238 MB).
+- **Memory is constrained and your data has string/mixed-type columns** — for purely numeric fixed-width dtypes, both libraries use identical memory (Pandas columns are numpy arrays internally). The saving only materialises with object columns.
 - Your data is genuinely homogeneous and you do not need column labels, alignment, or a relational API.
 
 **Use Pandas when:**
