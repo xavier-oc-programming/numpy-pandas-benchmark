@@ -142,14 +142,8 @@ All times are mean of 5 runs using `time.perf_counter()`.
 
 ### Grouped bar charts — execution time per operation
 
-![100k rows](plots/01_speed_bars_100k.png)
-*100k rows: differences are modest; NumPy leads on sort, mean, std, groupby.*
-
-![1M rows](plots/02_speed_bars_1m.png)
-*1M rows: patterns stabilise; Pandas' groupby and fillna advantages emerge.*
-
-![10M rows](plots/03_speed_bars_10m.png)
-*10M rows: sort gap widens to 1.94×; Pandas fillna is 3.3× faster than np.where.*
+![Speed bars](plots/01_speed_bars_100k.png)
+*All three scales side by side. Left: 100k rows (differences modest). Centre: 1M rows (patterns stabilise, Pandas fillna advantage emerges). Right: 10M rows (sort gap widens to 1.94×, Pandas fillna is 3.3× faster).*
 
 ### Speedup heatmap
 
